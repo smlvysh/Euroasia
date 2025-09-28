@@ -213,6 +213,9 @@
   .my-\[50px\] {
     margin-block: 50px;
   }
+  .my-\[100px\] {
+    margin-block: 100px;
+  }
   .my-\[130\] {
     margin-block: 130;
   }
@@ -225,11 +228,17 @@
   .my-\[170px\] {
     margin-block: 170px;
   }
+  .my-\[1000px\] {
+    margin-block: 1000px;
+  }
   .mt-\[10px\] {
     margin-top: 10px;
   }
   .mt-\[50\] {
     margin-top: 50;
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
   }
   .mt-\[80px\] {
     margin-top: 80px;
@@ -252,8 +261,14 @@
   .table {
     display: table;
   }
+  .h-\[54px\] {
+    height: 54px;
+  }
   .h-\[295px\] {
     height: 295px;
+  }
+  .h-\[406px\] {
+    height: 406px;
   }
   .h-\[auto\] {
     height: auto;
@@ -264,8 +279,29 @@
   .w-\[216px\] {
     width: 216px;
   }
+  .w-\[258px\] {
+    width: 258px;
+  }
   .w-\[300px\] {
     width: 300px;
+  }
+  .w-\[561\] {
+    width: 561;
+  }
+  .w-\[561px\] {
+    width: 561px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[650px\] {
+    width: 650px;
+  }
+  .w-\[700px\] {
+    width: 700px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .w-full {
     width: 100%;
@@ -312,6 +348,9 @@
   .gap-\[20px\] {
     gap: 20px;
   }
+  .gap-\[30\] {
+    gap: 30;
+  }
   .gap-\[30px\] {
     gap: 30px;
   }
@@ -329,6 +368,12 @@
   }
   .gap-\[px\] {
     gap: px;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-\[10px\] {
+    border-radius: 10px;
   }
   .rounded-\[15px\] {
     border-radius: 15px;
@@ -364,6 +409,9 @@
   .bg-center {
     background-position: center;
   }
+  .bg-left {
+    background-position: left;
+  }
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
@@ -382,6 +430,9 @@
   .px-\[20px\] {
     padding-inline: 20px;
   }
+  .px-\[50px\] {
+    padding-inline: 50px;
+  }
   .py-\[10px\] {
     padding-block: 10px;
   }
@@ -390,6 +441,12 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
+  .py-\[80px\] {
+    padding-block: 80px;
   }
   .py-\[100px\] {
     padding-block: 100px;
@@ -409,11 +466,17 @@
   .text-\[14px\] {
     font-size: 14px;
   }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
   .text-\[18px\] {
     font-size: 18px;
   }
   .text-\[24px\] {
     font-size: 24px;
+  }
+  .text-\[26px\] {
+    font-size: 26px;
   }
   .text-\[40px\] {
     font-size: 40px;
@@ -452,6 +515,9 @@
   }
   .text-\[18\[x\]\] {
     color: 18[x];
+  }
+  .text-\[40\] {
+    color: 40;
   }
   .text-\[gray\] {
     color: gray;
@@ -492,9 +558,29 @@
       display: block;
     }
   }
+  .max-xl\:flex {
+    @media (width < 80rem) {
+      display: flex;
+    }
+  }
   .max-xl\:hidden {
     @media (width < 80rem) {
       display: none;
+    }
+  }
+  .max-xl\:flex-col {
+    @media (width < 80rem) {
+      flex-direction: column;
+    }
+  }
+  .max-xl\:gap-\[20px\] {
+    @media (width < 80rem) {
+      gap: 20px;
+    }
+  }
+  .max-lg\:flex {
+    @media (width < 64rem) {
+      display: flex;
     }
   }
   .max-lg\:flex-col {
@@ -532,6 +618,71 @@
       gap: 5px;
     }
   }
+  .max-lg\:gap-\[20px\] {
+    @media (width < 64rem) {
+      gap: 20px;
+    }
+  }
+  .max-md\:h-\[300px\] {
+    @media (width < 48rem) {
+      height: 300px;
+    }
+  }
+  .max-md\:h-\[350px\] {
+    @media (width < 48rem) {
+      height: 350px;
+    }
+  }
+  .max-md\:w-\[280px\] {
+    @media (width < 48rem) {
+      width: 280px;
+    }
+  }
+  .max-md\:w-\[300px\] {
+    @media (width < 48rem) {
+      width: 300px;
+    }
+  }
+  .max-md\:flex-col {
+    @media (width < 48rem) {
+      flex-direction: column;
+    }
+  }
+  .max-md\:gap-\[10px\] {
+    @media (width < 48rem) {
+      gap: 10px;
+    }
+  }
+  .max-md\:gap-\[20px\] {
+    @media (width < 48rem) {
+      gap: 20px;
+    }
+  }
+  .max-md\:rounded-\[20px\] {
+    @media (width < 48rem) {
+      border-radius: 20px;
+    }
+  }
+  .max-md\:rounded-\[30px\] {
+    @media (width < 48rem) {
+      border-radius: 30px;
+    }
+  }
+  .max-md\:text-\[14px\] {
+    @media (width < 48rem) {
+      font-size: 14px;
+    }
+  }
+  .max-md\:text-\[24px\] {
+    @media (width < 48rem) {
+      font-size: 24px;
+    }
+  }
+  .max-md\:text-\[26px\] {
+    @media (width < 48rem) {
+      font-size: 26px;
+    }
+  }
   .max-sm\:flex {
     @media (width < 40rem) {
       display: flex;
@@ -542,9 +693,24 @@
       display: none;
     }
   }
+  .max-sm\:h-\[45px\] {
+    @media (width < 40rem) {
+      height: 45px;
+    }
+  }
   .max-sm\:h-\[260px\] {
     @media (width < 40rem) {
       height: 260px;
+    }
+  }
+  .max-sm\:h-\[350px\] {
+    @media (width < 40rem) {
+      height: 350px;
+    }
+  }
+  .max-sm\:h-\[400px\] {
+    @media (width < 40rem) {
+      height: 400px;
     }
   }
   .max-sm\:w-\[67px\] {
@@ -560,6 +726,11 @@
   .max-sm\:w-\[150px\] {
     @media (width < 40rem) {
       width: 150px;
+    }
+  }
+  .max-sm\:w-\[200px\] {
+    @media (width < 40rem) {
+      width: 200px;
     }
   }
   .max-sm\:flex-col {
@@ -587,6 +758,36 @@
       gap: 30px;
     }
   }
+  .max-sm\:rounded-\[20px\] {
+    @media (width < 40rem) {
+      border-radius: 20px;
+    }
+  }
+  .max-sm\:rounded-\[30px\] {
+    @media (width < 40rem) {
+      border-radius: 30px;
+    }
+  }
+  .max-sm\:bg-cover {
+    @media (width < 40rem) {
+      background-size: cover;
+    }
+  }
+  .max-sm\:bg-center {
+    @media (width < 40rem) {
+      background-position: center;
+    }
+  }
+  .max-sm\:py-\[30px\] {
+    @media (width < 40rem) {
+      padding-block: 30px;
+    }
+  }
+  .max-sm\:text-center {
+    @media (width < 40rem) {
+      text-align: center;
+    }
+  }
   .max-sm\:text-\[10px\] {
     @media (width < 40rem) {
       font-size: 10px;
@@ -607,9 +808,19 @@
       font-size: 16px;
     }
   }
+  .max-sm\:text-\[18px\] {
+    @media (width < 40rem) {
+      font-size: 18px;
+    }
+  }
   .max-sm\:text-\[20px\] {
     @media (width < 40rem) {
       font-size: 20px;
+    }
+  }
+  .max-sm\:text-\[22px\] {
+    @media (width < 40rem) {
+      font-size: 22px;
     }
   }
   .max-sm\:text-\[26px\] {
@@ -620,6 +831,11 @@
   .max-sm\:text-\[32px\] {
     @media (width < 40rem) {
       font-size: 32px;
+    }
+  }
+  .max-sm\:text-\[32ppx\] {
+    @media (width < 40rem) {
+      color: 32ppx;
     }
   }
 }
